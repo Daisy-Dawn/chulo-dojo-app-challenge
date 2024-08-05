@@ -26,7 +26,7 @@ function App() {
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<Signup />} />
                     </Route>
-                    {/* <Route element={<PrivateRoutes />}>
+                    <Route element={<PrivateRoutes />}>
                         <Route element={<DashboardLayout />}>
                             <Route path="/dashboard" element={<Dashboard />} />
                             <Route
@@ -38,7 +38,7 @@ function App() {
                                 element={<NewProject />}
                             />
                         </Route>
-                    </Route> */}
+                    </Route>
 
                     {/* <Route path="*" element={<ErrorPage />} /> */}
                 </Routes>

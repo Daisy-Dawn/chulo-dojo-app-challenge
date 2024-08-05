@@ -174,12 +174,12 @@ const Signup = () => {
                 })
 
                 // Store user information in Firestore
-                // await setDoc(doc(db, 'users', user.uid), {
-                //     uid: user.uid,
-                //     email: signupFormData.email,
-                //     displayName: signupFormData.displayName,
-                //     photoURL: displayPictureURL,
-                // })
+                await setDoc(doc(db, 'users', user.uid), {
+                    uid: user.uid,
+                    email: signupFormData.email,
+                    displayName: signupFormData.displayName,
+                    photoURL: displayPictureURL,
+                })
 
                 console.log('User signed up:', user)
                 setAlertContent({
