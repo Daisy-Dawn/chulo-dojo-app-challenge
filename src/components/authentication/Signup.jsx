@@ -190,9 +190,7 @@ const Signup = () => {
                 setAlertOpen(true)
                 setLoading(false)
 
-                setTimeout(() => {
-                    navigate('/dashboard')
-                }, 2000)
+                navigate('/dashboard')
             } catch (error) {
                 console.error('Error signing up:', error)
                 setAlertContent({
