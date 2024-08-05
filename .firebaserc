@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "chulo-dojo-app",
+    "staging": "chulo-dojo-app"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
