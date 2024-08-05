@@ -9,11 +9,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 import { getDatabase } from 'firebase/database'
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: 'AIzaSyBrbrLV3RpkxUjnRGP3AT-8ExxOpSoQnb4',
     authDomain: 'chulo-dojo-app.firebaseapp.com',
+    databaseURL: 'https://chulo-dojo-app-default-rtdb.firebaseio.com',
     projectId: 'chulo-dojo-app',
-    storageBucket: 'chulo-dojo-app',
+    storageBucket: 'chulo-dojo-app.appspot.com',
     messagingSenderId: '856274412831',
     appId: '1:856274412831:web:4df6b5e0bc3d93c129fc2a',
 }
