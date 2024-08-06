@@ -11,11 +11,11 @@ const Layout = () => {
     }
 
     return (
-        <div className="dashboard-layout w-full">
+        <div className="dashboard-layout relative w-full">
             <nav className="dashboard-header">
                 <Header />
             </nav>
-            <aside className="dashboard-sidebar bg-lightPink hidden lg:block ">
+            <aside className="dashboard-sidebar h-screen fixed bg-lightPink hidden lg:block ">
                 <Sidebar />
             </aside>
             <aside className="dashboard-aside bg-white hidden lg:block ">

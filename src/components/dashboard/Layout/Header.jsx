@@ -70,18 +70,16 @@ const Header = () => {
     return (
         <nav className="h-[100px] flex justify-between px-[1rem] lg:px-[4rem] py-[2rem] w-full bg-greyBg sticky top-0 shadow-sm z-50 transition-all duration-300">
             <div className="flex items-center gap-[0.5rem]">
-                <img className="w-[30px] lg:w-[40px]" src={logo} alt="logo" />
+                <img
+                    className="w-[30px] hidden lg:block lg:w-[40px]"
+                    src={logo}
+                    alt="logo"
+                />
                 <p className="text-[1.5rem] md:text-[1.7rem] header-text font-bold font-greatVibes">
                     The Dojo
                 </p>
             </div>
 
-            <div
-                onClick={() => setRevealNav(true)}
-                className="cursor-pointer lg:hidden"
-            >
-                <HiMiniBars3BottomRight className="w-7 h-7 text-blackberry" />
-            </div>
             {/* mobile */}
             <div
                 className={`${
@@ -99,11 +97,11 @@ const Header = () => {
 
             {/* desktop */}
 
-            <div className="hidden lg:flex gap-[1.5rem]">
+            <div className="flex gap-[1.5rem]">
                 <Button
                     loading={loading}
                     onClick={handleSignOut}
-                    className="flex bg-coral items-center gap-3"
+                    className="flex bg-coral p-3 md:p-4 items-center gap-3"
                     variant="gradient"
                     color="pink"
                 >
@@ -111,6 +109,13 @@ const Header = () => {
                     {!loading && <IoMdLogOut size={20} />}
                     Log Out
                 </Button>
+            </div>
+
+            <div
+                onClick={() => setRevealNav(true)}
+                className="cursor-pointer lg:hidden"
+            >
+                <HiMiniBars3BottomRight className="w-7 h-7 text-blackberry" />
             </div>
         </nav>
     )

@@ -25,7 +25,7 @@ export function BlogCard() {
                 <Typography className="font-normal">
                     Due by Thurs January 10, 2024
                 </Typography>
-                <div className="grid mt-[1rem]  grid-cols-3 gap-4">
+                <div className="grid mt-[1rem] grid-cols-2  lg:grid-cols-3 gap-4">
                     <div className="flex flex-col items-center gap-2">
                         <Avatar
                             src="https://docs.material-tailwind.com/img/face-2.jpg"

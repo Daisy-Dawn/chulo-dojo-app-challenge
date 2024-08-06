@@ -151,7 +151,7 @@ const NewProject = () => {
 
             <form
                 onSubmit={handleSubmit}
-                className="flex gap-[1rem] w-[70%] flex-col"
+                className="flex gap-[1rem] w-full md:w-[70%] lg:w-full xl:w-[70%] flex-col"
             >
                 <div className="flex w-full flex-col">
                     <label className="text-blackberry mb-[1rem]">
@@ -191,7 +191,7 @@ const NewProject = () => {
                     {errors.projectDetails && <TypographyI />}
                 </div>
 
-                <div className="flex w-2/3 flex-col">
+                <div className="flex w-full 2xl:w-2/3 flex-col">
                     <label className="text-blackberry mb-[1rem] capitalize">
                         Set due date:{' '}
                     </label>
@@ -211,7 +211,7 @@ const NewProject = () => {
                     {errors.dueDate && <TypographyI />}
                 </div>
 
-                <div className="flex w-2/3  flex-col">
+                <div className="flex w-full 2xl:w-2/3  flex-col">
                     <label className="text-blackberry mb-[1rem] capitalize">
                         Project Category
                     </label>

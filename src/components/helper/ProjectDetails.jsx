@@ -131,9 +131,9 @@ const ProjectDetails = () => {
     if (!project) return <div>Loading...</div>
 
     return (
-        <div className="p-4 grid grid-cols-2">
+        <div className="p-4 grid grid-cols-1 gap-[2rem] 2xl:gap-0 lg:grid-cols-1 2xl:grid-cols-2 md:grid-cols-2">
             <div>
-                <Card className="mt-6 w-96">
+                <Card className="mt-6 max-w-[24rem]">
                     <CardBody>
                         <Typography
                             variant="h5"
@@ -163,7 +163,7 @@ const ProjectDetails = () => {
                                 ? project.assignedTo.map((assignee) => (
                                       <div
                                           key={assignee.uid}
-                                          className="flex flex-col items-center gap-2"
+                                          className="flex flex-col items-center "
                                       >
                                           <Avatar
                                               src={
@@ -249,7 +249,7 @@ const ProjectDetails = () => {
 
                 <div className="space-y-4 mb-[2rem]">
                     {comments.map((commentData, index) => (
-                        <Card key={index} className="w-96 mb-4">
+                        <Card key={index} className="max-w-96 mb-4">
                             <CardBody>
                                 <div className="flex items-center gap-4">
                                     <Avatar

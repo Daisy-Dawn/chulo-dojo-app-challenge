@@ -179,7 +179,7 @@ const Dashboard = () => {
                     value={selectedTab}
                     onChange={(value) => setSelectedTab(value)}
                 >
-                    <TabsHeader>
+                    <TabsHeader className="overflow-x-auto whitespace-nowrap">
                         {data.map(({ label, value, icon }) => (
                             <Tab key={value} value={value}>
                                 <div className="flex items-center gap-2">
@@ -195,7 +195,7 @@ const Dashboard = () => {
                         {data.map(({ value, desc }) => (
                             <TabPanel key={value} value={value}>
                                 {Array.isArray(desc) ? (
-                                    <ul className="grid gap-5 grid-cols-2">
+                                    <ul className="grid gap-5 grid-cols-1 lg:grid-cols-1  2xl:grid-cols-2 md:grid-cols-2">
                                         {desc.map((project) => (
                                             <Card
                                                 onClick={() =>
@@ -215,7 +215,7 @@ const Dashboard = () => {
                                                     <Typography className="font-normal">
                                                         Due by {project.dueDate}
                                                     </Typography>
-                                                    <div className="grid mt-[1rem]  grid-cols-3 gap-4">
+                                                    <div className="grid mt-[1rem] grid-cols-2  lg:grid-cols-3 gap-4">
                                                         {Array.isArray(
                                                             project.assignedTo
                                                         )
